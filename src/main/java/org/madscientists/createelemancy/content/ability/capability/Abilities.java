@@ -67,17 +67,17 @@ public class Abilities {
     public static void entityTick(LivingEvent.LivingTickEvent event) {
         tick(event.getEntity());
     }
+
     private static void tick(LivingEntity entity) {
         //overkill check due to crashes
         if(entity.deathTime>0) return;
+        if (entity.isDeadOrDying()) return;
         if(getAbilities(entity).isEmpty()) return;
         getAbilities(entity).stream().forEach(ability -> ability.tick(entity));
         getAbilities(entity).stream().filter(Ability::isAbilityComplete).forEach(ability -> ability.onAbilityExpire(entity));
         getAbilities(entity).stream().filter(Ability::isAbilityComplete).forEach(ability -> ability.onAbilityRemove(entity));
         ProcUtils.applyComposites(entity,getAbilities(entity));
         getAbilities(entity).removeIf(Ability::isAbilityComplete);
-
-
     }
 
 
@@ -99,11 +99,7 @@ public class Abilities {
     }
     private static void onEntityDeath(LivingEntity entity) {
         entity.deathTime = 1;
-        getAbilities(entity).forEach(ability -> ability.onPlayerDeath(entity));
-        if(entity instanceof Player player) {
-            getAbilities(entity).removeIf(Ability::shouldRemoveOnDeath);
-            savePersistentData(player);
-        }
+        getAbilities(entity).forEach(ability -> ability.onDeath(entity));
     }
 
     @SubscribeEvent

@@ -1,14 +1,9 @@
 package org.madscientists.createelemancy.content.ability.api;
 
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 
 public abstract class Ability {
@@ -111,7 +106,7 @@ public abstract class Ability {
      *
      * @param entity The entity that died.
      */
-    public void onPlayerDeath(LivingEntity entity){
+    public void onDeath(LivingEntity entity) {
         if(shouldRemoveOnDeath())
             onAbilityRemove(entity);
     }
