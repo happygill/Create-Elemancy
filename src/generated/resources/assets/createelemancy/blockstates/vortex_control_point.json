@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "shaft=false,top=false": {
+      "model": "createelemancy:block/vortex_control_point/vcp_bottom"
+    },
+    "shaft=false,top=true": {
+      "model": "createelemancy:block/vortex_control_point/vcp_top"
+    },
+    "shaft=true,top=false": {
+      "model": "createelemancy:block/vortex_control_point/vcp_shaft_bottom"
+    },
+    "shaft=true,top=true": {
+      "model": "createelemancy:block/vortex_control_point/vcp_shaft_top"
+    }
+  }
+}

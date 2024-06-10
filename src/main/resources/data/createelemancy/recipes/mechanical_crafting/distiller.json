@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "B": {
+      "tag": "forge:plates/brass"
+    },
+    "F": {
+      "item": "create:fluid_tank"
+    },
+    "P": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "pattern": [
+    "BFB",
+    "FFF",
+    "BFB",
+    " P ",
+    " P "
+  ],
+  "result": {
+    "item": "createelemancy:distiller"
+  }
+}

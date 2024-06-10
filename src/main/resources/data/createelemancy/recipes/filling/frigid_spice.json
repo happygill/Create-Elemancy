@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "fluid": "createelemancy:frigid",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:frigid_spice"
+    }
+  ]
+}

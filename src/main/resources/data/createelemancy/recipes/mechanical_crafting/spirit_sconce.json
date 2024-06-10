@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "B": {
+      "item": "create:empty_blaze_burner"
+    },
+    "I": {
+      "tag": "forge:plates/iron"
+    },
+    "N": {
+      "tag": "forge:nuggets/iron"
+    },
+    "S": {
+      "item": "createelemancy:heat_spice"
+    }
+  },
+  "pattern": [
+    "I I",
+    "IBI",
+    "NSN"
+  ],
+  "result": {
+    "item": "createelemancy:spirit_sconce"
+  }
+}

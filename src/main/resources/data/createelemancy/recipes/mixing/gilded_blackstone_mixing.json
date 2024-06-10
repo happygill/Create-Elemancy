@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:stability",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gilded_blackstone"
+    }
+  ]
+}

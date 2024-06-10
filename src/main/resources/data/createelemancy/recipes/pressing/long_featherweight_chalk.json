@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createelemancy:featherweight_spice"
+    },
+    {
+      "item": "createelemancy:featherweight_spice"
+    },
+    {
+      "item": "createelemancy:featherweight_spice"
+    },
+    {
+      "item": "createelemancy:featherweight_spice"
+    },
+    {
+      "item": "createelemancy:featherweight_spice"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:long_featherweight_chalk"
+    }
+  ]
+}

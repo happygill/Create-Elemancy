@@ -1,0 +1,96 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "createelemancy:block/vortex_generator",
+		"1": "create:block/copper_gearbox",
+		"2": "create:block/copper_plating",
+		"3": "create:block/brass_gearbox",
+		"particle": "createelemancy:block/vortex_generator"
+	},
+	"elements": [
+		{
+			"name": "top",
+			"from": [0, 10, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 4, 5.5], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5.5], "texture": "#0"},
+				"south": {"uv": [0, 4, 4, 5.5], "texture": "#0"},
+				"west": {"uv": [0, 4, 4, 5.5], "texture": "#0"},
+				"up": {"uv": [0, 12, 4, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		},
+		{
+			"name": "side n",
+			"from": [0, 6, 0],
+			"to": [16, 10, 0.1],
+			"faces": {
+				"north": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"},
+				"south": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side s",
+			"from": [0, 6, 15.9],
+			"to": [16, 10, 16],
+			"faces": {
+				"north": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"},
+				"south": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side w",
+			"from": [0, 6, 0],
+			"to": [0.1, 10, 16],
+			"faces": {
+				"east": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"},
+				"west": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side e",
+			"from": [15.9, 6, 0],
+			"to": [16, 10, 16],
+			"faces": {
+				"east": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"},
+				"west": {"uv": [0, 5.5, 4, 6.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "bot",
+			"from": [0, 0, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [0, 6.5, 4, 8], "texture": "#0"},
+				"east": {"uv": [0, 6.5, 4, 8], "texture": "#0"},
+				"south": {"uv": [0, 6.5, 4, 8], "texture": "#0"},
+				"west": {"uv": [0, 6.5, 4, 8], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "box",
+			"from": [3, -8, 3],
+			"to": [13, 0, 13],
+			"faces": {
+				"north": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"east": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"south": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"west": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "small_h_top",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6]
+		}
+	]
+}

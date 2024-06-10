@@ -1,0 +1,15 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:packed_ice"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:mixed_spice",
+      "count": 1,
+      "nbt": "{Elemancy_Elements:[I;0,4,2,0,0,0]}"
+    }
+  ]
+}

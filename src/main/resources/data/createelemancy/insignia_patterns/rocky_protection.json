@@ -1,0 +1,21 @@
+{
+  "pattern": [
+    "CB3",
+    "SM3",
+    "SY3",
+    "SS3",
+    "DH3",
+    "DJ3",
+    "DF3"
+  ],
+  "name": "Rocky Protection",
+  "description": "Temporarily Enchant 1 Level of Protection(+KB resistance) on any armour piece",
+  "result": [
+    {
+      "type": "temp enchant",
+      "seconds": 60,
+      "level": 1,
+      "enchants": ["protection"]
+    }
+  ]
+}

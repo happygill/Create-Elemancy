@@ -1,0 +1,34 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "createelemancy:elemental_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:heat_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:frigid_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:density_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:featherweight_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:reactivity_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:stability_spice",
+      "count": 10
+    }
+  ]
+}

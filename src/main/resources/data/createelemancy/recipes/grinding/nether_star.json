@@ -1,0 +1,14 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:power_spice",
+      "count": 8
+    }
+  ]
+}

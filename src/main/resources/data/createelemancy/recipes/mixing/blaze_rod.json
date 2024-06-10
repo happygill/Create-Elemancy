@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "fluid": "createelemancy:heat",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:blaze_rod"
+
+    }
+  ]
+}

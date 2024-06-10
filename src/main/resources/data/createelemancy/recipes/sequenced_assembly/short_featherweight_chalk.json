@@ -1,0 +1,30 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createelemancy:featherweight_spice"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "item": "createelemancy:short_featherweight_chalk"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createelemancy:incomplete_short_featherweight_chalk"
+        }
+      ],
+      "results": [
+        {
+          "item": "createelemancy:incomplete_short_featherweight_chalk"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createelemancy:incomplete_short_featherweight_chalk"
+  }
+}

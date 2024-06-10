@@ -1,0 +1,15 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:mixed_spice",
+      "count": 1,
+      "nbt": "{Elemancy_Elements:[I;1,0,0,2,1,0]}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "createelemancy:power_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:power_spice",
+      "count": 10
+    }
+  ]
+}

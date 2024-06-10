@@ -1,0 +1,15 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:mixed_spice",
+      "count": 1,
+      "nbt": "{Elemancy_Elements:[I;0,0,0,5,0,3]}"
+    }
+  ]
+}

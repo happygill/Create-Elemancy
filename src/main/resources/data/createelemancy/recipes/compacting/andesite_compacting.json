@@ -1,0 +1,18 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:density",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:andesite"
+    }
+  ]
+}

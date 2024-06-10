@@ -1,0 +1,31 @@
+{
+  "parent": "createelemancy:crayon",
+  "criteria": {
+    "0": {
+      "conditions": {},
+      "trigger": "createelemancy:ritual_builtin"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createelemancy.ritual.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "createelemancy:insignia_guide"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.createelemancy.ritual"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

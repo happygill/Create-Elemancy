@@ -1,0 +1,18 @@
+{
+  "pattern": [
+    "CB7",
+    "SP7",
+    "SZ7",
+    "SV7",
+    "SY7"
+  ],
+  "name": "Inverted Null Space",
+  "description": "Creates a 6x6x6 Null Space, or adds 6x6x6 to a null Space, everything within that null space, is now the opposite, within a limit of possibility/reason/balancing",
+
+  "result": [
+    {
+      "type": "builtin",
+      "key": "inverted_null_space"
+    }
+  ]
+}

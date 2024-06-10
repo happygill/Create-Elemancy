@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "B": {
+      "tag": "forge:ingots/brass"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "F": {
+      "item": "create:propeller"
+    },
+    "N": {
+      "item": "minecraft:copper_block"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "R": {
+      "item": "create:rotation_speed_controller"
+    },
+    "S": {
+      "tag": "forge:plates/copper"
+    }
+  },
+  "pattern": [
+    " SFS ",
+    "SBFBS",
+    "BPFPB",
+    "CRPRC",
+    " CNC "
+  ],
+  "result": {
+    "item": "createelemancy:vortex_control_point"
+  }
+}

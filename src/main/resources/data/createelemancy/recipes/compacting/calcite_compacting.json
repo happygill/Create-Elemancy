@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:frigid",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:calcite"
+    }
+  ]
+}

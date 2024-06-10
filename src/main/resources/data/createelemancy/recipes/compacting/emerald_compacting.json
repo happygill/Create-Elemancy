@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "amount": 500,
+      "fluid": "createelemancy:density",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "fluid": "createelemancy:power",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:power_core"
+
+    }
+  ]
+}

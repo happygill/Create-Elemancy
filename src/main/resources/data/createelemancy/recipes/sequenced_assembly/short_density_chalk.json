@@ -1,0 +1,30 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createelemancy:density_spice"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "item": "createelemancy:short_density_chalk"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createelemancy:incomplete_short_density_chalk"
+        }
+      ],
+      "results": [
+        {
+          "item": "createelemancy:incomplete_short_density_chalk"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "createelemancy:incomplete_short_density_chalk"
+  }
+}

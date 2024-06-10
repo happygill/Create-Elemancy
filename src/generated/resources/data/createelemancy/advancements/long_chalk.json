@@ -1,0 +1,32 @@
+{
+  "parent": "createelemancy:crayon",
+  "criteria": {
+    "0": {
+      "conditions": {},
+      "trigger": "createelemancy:long_chalk_builtin"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createelemancy.long_chalk.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "createelemancy:long_heat_chalk",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.createelemancy.long_chalk"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

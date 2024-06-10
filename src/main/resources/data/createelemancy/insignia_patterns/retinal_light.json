@@ -1,0 +1,17 @@
+{
+  "pattern": [
+    "CA1",
+    "SZ1",
+    "SY1"
+  ],
+  "name": "Retinal Light",
+  "description": "Provides Night Vision for 1 and a half minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "night_vision",
+      "seconds": 90,
+      "amp": 0
+    }
+  ]
+}

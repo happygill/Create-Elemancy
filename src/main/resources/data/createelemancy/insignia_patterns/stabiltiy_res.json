@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "CA6",
+    "SZ6"
+  ],
+  "name": "Stability Resistance",
+  "description": "Provides Resistance for 5 minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "resistance",
+      "seconds": 300,
+      "amp": 0
+    }
+  ]
+}

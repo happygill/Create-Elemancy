@@ -1,0 +1,18 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:stone"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:featherweight",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:diorite"
+    }
+  ]
+}

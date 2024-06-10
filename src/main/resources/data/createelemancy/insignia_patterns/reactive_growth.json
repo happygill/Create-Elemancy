@@ -1,0 +1,23 @@
+{
+  "pattern": [
+    "CB5",
+    "DI5",
+    "DJ5",
+    "DH5",
+    "DE5",
+    "DF5",
+    "DG5",
+    "ST5",
+    "SR5",
+    "SX5",
+    "SN5"
+  ],
+  "name": "Reactive Growth",
+  "description": "Grows all crops in 25 block radius",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "reactive_growth"
+    }
+  ]
+}

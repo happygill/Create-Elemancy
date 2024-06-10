@@ -1,0 +1,49 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"8": "createelemancy:block/window_connected",
+		"particle": "createelemancy:block/brass_tank"
+
+	},
+	"elements": [
+		{
+			"name": "Window",
+			"from": [0, 0, 0.95],
+			"to": [16, 16, 0.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 0.95]},
+			"faces": {
+				"north": {"uv": [8, 4, 12, 8], "texture": "#8", "cullface": "west"},
+				"south": {"uv": [8, 4, 12, 8], "texture": "#8", "cullface": "west"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "tank 3x3",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "c",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "tank",
+							"origin": [8, 8, -23],
+							"color": 0,
+							"children": [0]
+						},
+						{
+							"name": "tank",
+							"origin": [8, 8, -23],
+							"color": 0,
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

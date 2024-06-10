@@ -1,0 +1,24 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:cobblestone"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:heat",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:netherrack"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "CB3",
+    "DH3",
+    "DE3",
+    "SM3",
+    "SY3",
+    "SZ3",
+    "SX3",
+    "SN3"
+  ],
+  "name": "A Denser Tool",
+  "description": "Temporarily Enchant 1 Level of Efficiency/Sharpness on all weapons/tools",
+  "result": [
+    {
+      "type": "temp enchant",
+      "seconds": 60,
+      "level": 1,
+      "enchants": ["sharpness","efficiency"]
+    }
+  ]
+}

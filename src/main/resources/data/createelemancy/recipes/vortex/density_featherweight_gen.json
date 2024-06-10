@@ -1,0 +1,23 @@
+{
+  "type": "createelemancy:vortex_gen",
+  "ingredients": [
+    {
+      "amount": 200,
+      "fluid": "createelemancy:density",
+      "nbt": {}
+    },
+    {
+      "amount": 200,
+      "fluid": "createelemancy:featherweight",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 400,
+      "fluid": "createelemancy:garbled_spice",
+      "nbt": {}
+    }
+  ],
+  "suOutput": 1024
+}

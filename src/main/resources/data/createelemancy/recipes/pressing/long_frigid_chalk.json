@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createelemancy:frigid_spice"
+    },
+    {
+      "item": "createelemancy:frigid_spice"
+    },
+    {
+      "item": "createelemancy:frigid_spice"
+    },
+    {
+      "item": "createelemancy:frigid_spice"
+    },
+    {
+      "item": "createelemancy:frigid_spice"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:long_frigid_chalk"
+    }
+  ]
+}

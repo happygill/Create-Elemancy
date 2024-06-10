@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "fluid": "createelemancy:density",
+      "amount": 1000
+    },
+    {
+      "fluid": "createelemancy:featherweight",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:gravitational_core"
+
+    }
+  ]
+}

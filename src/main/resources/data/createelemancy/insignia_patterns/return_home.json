@@ -1,0 +1,19 @@
+{
+  "pattern": [
+    "CB7",
+    "SS7",
+    "SY7",
+    "SM7",
+    "SV7",
+    "SZ7",
+    "SP7"
+  ],
+  "name": "Return of Power",
+  "description": "TP to Player's Bed after Five seconds",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "spawn_point"
+    }
+  ]
+}

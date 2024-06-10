@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:reactivity",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sponge"
+    }
+  ]
+}

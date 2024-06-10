@@ -1,0 +1,17 @@
+{
+  "pattern": [
+    "CA7",
+    "SY7",
+    "DJ7"
+  ],
+  "name": "Imbued Power",
+  "description": "Provides Strength for 1 and a half minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "strength",
+      "seconds": 90,
+      "amp": 0
+    }
+  ]
+}

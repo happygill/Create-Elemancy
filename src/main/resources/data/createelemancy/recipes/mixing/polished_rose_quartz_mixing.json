@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:stability",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "create:polished_rose_quartz"
+    }
+  ]
+}

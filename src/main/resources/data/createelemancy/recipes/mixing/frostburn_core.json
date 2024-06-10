@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "fluid": "createelemancy:heat",
+      "amount": 1000
+    },
+    {
+      "fluid": "createelemancy:frigid",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:frostburn_core"
+
+    }
+  ]
+}

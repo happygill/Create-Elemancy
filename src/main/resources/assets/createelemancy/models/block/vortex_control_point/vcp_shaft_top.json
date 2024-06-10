@@ -1,0 +1,91 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "createelemancy:block/vortex_generator",
+		"1": "create:block/brass_gearbox",
+		"2": "create:block/copper_plating",
+		"3": "create:block/copper_gearbox",
+		"particle": "createelemancy:block/vortex_generator"
+	},
+	"elements": [
+		{
+			"name": "core",
+			"from": [2, 0, 2],
+			"to": [14, 15, 14],
+			"faces": {
+				"up": {"uv": [2, 2, 14, 14], "texture": "#1"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "side n",
+			"from": [0, 0, 0],
+			"to": [16, 16, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"east": {"uv": [3.5, 0, 4, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 0.5, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#1"},
+				"down": {"uv": [0, 14, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "side s",
+			"from": [0, 0, 14],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 0.5, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"west": {"uv": [3.5, 0, 4, 4], "texture": "#0"},
+				"up": {"uv": [0, 14, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 2], "texture": "#2"}
+			}
+		},
+		{
+			"name": "side w",
+			"from": [0, 0, 2],
+			"to": [2, 16, 14],
+			"faces": {
+				"east": {"uv": [0.5, 0, 3.5, 4], "texture": "#0"},
+				"west": {"uv": [0.5, 0, 3.5, 4], "texture": "#0"},
+				"up": {"uv": [0, 2, 2, 14], "texture": "#1"},
+				"down": {"uv": [0, 2, 2, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "side e",
+			"from": [14, 0, 2],
+			"to": [16, 16, 14],
+			"faces": {
+				"east": {"uv": [0.5, 0, 3.5, 4], "texture": "#0"},
+				"west": {"uv": [0.5, 0, 3.5, 4], "texture": "#0"},
+				"up": {"uv": [14, 2, 16, 14], "texture": "#1"},
+				"down": {"uv": [14, 2, 16, 14], "texture": "#2"}
+			}
+		},
+		{
+			"name": "box",
+			"from": [3, -8, 3],
+			"to": [13, 0, 13],
+			"faces": {
+				"north": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"east": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"south": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"west": {"uv": [13.5, 14, 16, 16], "texture": "#0"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "shaft_top",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5]
+		}
+	]
+}

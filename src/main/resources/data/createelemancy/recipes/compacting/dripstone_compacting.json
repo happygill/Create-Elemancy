@@ -1,0 +1,18 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:granite"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:frigid",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:dripstone_block"
+    }
+  ]
+}

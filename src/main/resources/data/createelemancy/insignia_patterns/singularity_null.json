@@ -1,0 +1,18 @@
+{
+  "pattern": [
+    "CB7",
+    "SP7",
+    "SZ7",
+    "SV7",
+    "SY7"
+  ],
+  "name": "Singularity Null Space",
+  "description": " Creates an 8x8x8 Null Space(Or adds 8x8x8 to a Null Space), and becomes the equivalent of a black hole, dragging players within roughly 10 blocks of the edge of the Null Space, into the Null Space, before dropping them of inside, the walls become solid, so players may not leave while Singularity is active",
+
+  "result": [
+    {
+      "type": "builtin",
+      "key": "singularity_null_space"
+    }
+  ]
+}

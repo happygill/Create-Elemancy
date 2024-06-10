@@ -1,0 +1,32 @@
+{
+  "parent": "createelemancy:solid",
+  "criteria": {
+    "0": {
+      "conditions": {},
+      "trigger": "createelemancy:projectile_builtin"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createelemancy.projectile.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "create:potato_cannon",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.createelemancy.projectile"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

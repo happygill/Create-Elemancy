@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "createelemancy:elemental_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:power_core"
+
+    }
+  ]
+}

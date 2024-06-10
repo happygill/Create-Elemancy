@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "fluid": "createelemancy:power",
+      "amount": 10
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 10
+    },
+    {
+      "item": "minecraft:deepslate"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:runic_slate",
+      "count": 5
+    }
+  ]
+}

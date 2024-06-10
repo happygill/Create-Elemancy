@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "CA5",
+    "SZ5"
+  ],
+  "name": "Accelerated",
+  "description": "Provides Haste for 1 and a half minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "haste",
+      "seconds": 90,
+      "amp": 0
+    }
+  ]
+}

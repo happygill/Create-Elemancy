@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createelemancy:garbled_spice"
+    },
+    {
+      "fluidTag": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:diluted_garbled_spice"
+    }
+  ]
+}

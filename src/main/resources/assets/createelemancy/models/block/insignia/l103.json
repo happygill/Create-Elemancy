@@ -1,0 +1,9 @@
+{
+	"parent": "block/block",
+	"loader": "forge:obj",
+	"flip_v": true,
+	"model": "createelemancy:models/block/insignia/l75.obj",
+	"textures": {
+		"0": "createelemancy:block/l103"
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "type": "createelemancy:distilling",
+  "ingredients": [
+    {
+      "item": "createelemancy:creative_spice"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:stability",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:heat",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:featherweight",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:density",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:frigid",
+      "nbt": {}
+    },
+    {
+      "amount": 1000,
+      "fluid": "createelemancy:reactivity",
+      "nbt": {}
+    }
+  ]
+}

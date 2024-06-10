@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:nautilus_shell"
+    },
+    {
+      "amount": 500,
+      "fluid": "createelemancy:reactivity",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  ]
+}

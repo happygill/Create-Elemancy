@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "fluid": "createelemancy:featherweight",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:featherweight_spice"
+    }
+  ]
+}

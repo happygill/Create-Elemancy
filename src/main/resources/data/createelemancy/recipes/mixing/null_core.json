@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "createelemancy:power_core"
+    },
+    {
+      "fluid": "minecraft:milk",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:null_core"
+
+    }
+  ]
+}

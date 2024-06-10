@@ -1,0 +1,11 @@
+{
+  "grinding": {
+    "sounds": [
+      {
+        "type": "event",
+        "name": "minecraft:block.netherrack.hit"
+      }
+    ],
+    "subtitle": "createelemancy.subtitle.grinding"
+  }
+}

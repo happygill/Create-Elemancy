@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "0": {
+      "conditions": {},
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "create:textures/gui/advancements.png",
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createelemancy.root.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "createelemancy:power_spice"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.createelemancy.root"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

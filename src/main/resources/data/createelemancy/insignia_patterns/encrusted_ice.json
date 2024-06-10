@@ -1,0 +1,17 @@
+{
+  "pattern": [
+    "CB2",
+    "SM2",
+    "SY2",
+    "SS2",
+    "SZ2"
+  ],
+  "name": "Encrusted Ice",
+  "description": "Significantly reduces Movement Speed and significantly buffs resistance after being hit",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "encrusted_ice"
+    }
+  ]
+}

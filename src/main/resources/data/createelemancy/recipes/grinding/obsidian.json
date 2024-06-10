@@ -1,0 +1,15 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:mixed_spice",
+      "count": 1,
+      "nbt": "{Elemancy_Elements:[I;0,1,6,0,0,3]}"
+    }
+  ]
+}

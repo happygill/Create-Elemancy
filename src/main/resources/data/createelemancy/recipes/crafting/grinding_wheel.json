@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OWO",
+    "ASA",
+    "OWO"
+  ],
+  "key": {
+    "S": {
+      "item": "create:shaft"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "createelemancy:grinding_wheel",
+    "count": 2
+  }
+}

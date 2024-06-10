@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createelemancy:stability_spice"
+    },
+    {
+      "item": "createelemancy:stability_spice"
+    },
+    {
+      "item": "createelemancy:stability_spice"
+    },
+    {
+      "item": "createelemancy:stability_spice"
+    },
+    {
+      "item": "createelemancy:stability_spice"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:long_stability_chalk"
+    }
+  ]
+}

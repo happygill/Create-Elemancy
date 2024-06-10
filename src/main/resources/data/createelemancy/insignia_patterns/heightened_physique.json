@@ -1,0 +1,17 @@
+{
+  "pattern": [
+    "CB7",
+    "SP7",
+    "SZ7",
+    "SV7",
+    "SY7"
+  ],
+  "name": "Heightened Physique",
+  "description": "Hunger does not drain for 1 and a half minutes",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "heightened_physique"
+    }
+  ]
+}

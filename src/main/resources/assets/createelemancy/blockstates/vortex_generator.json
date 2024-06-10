@@ -1,0 +1,134 @@
+{
+  "variants": {
+    "shape=single": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single"
+    },
+    "shape=bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_bottom"
+    },
+    "shape=middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_middle"
+    },
+    "shape=top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_top"
+    },
+    "shape=single_center": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_center"
+    },
+    "shape=single_middle_north": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_middle_north"
+    },
+    "shape=single_middle_east": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_middle_east"
+    },
+    "shape=single_middle_south": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_middle_south"
+    },
+    "shape=single_middle_west": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_middle_west"
+    },
+    "shape=single_corner_north_east": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_corner_north_east"
+    },
+    "shape=single_corner_south_east": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_corner_south_east"
+    },
+    "shape=single_corner_south_west": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_corner_south_west"
+    },
+    "shape=single_corner_north_west": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_single_corner_north_west"
+    },
+    "shape=multi_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_bottom"
+    },
+    "shape=multi_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_middle"
+    },
+    "shape=multi_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_top"
+    },
+    "shape=multi_north_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_bottom"
+    },
+    "shape=multi_north_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_middle"
+    },
+    "shape=multi_north_east_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_middle"
+    },
+    "shape=multi_east_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_middle",
+        "y": 90
+    },
+    "shape=multi_south_east_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_middle",
+        "y": 90
+    },
+    "shape=multi_south_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_middle",
+        "y": 180
+    },
+    "shape=multi_south_west_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_middle",
+        "y": 180
+    },
+    "shape=multi_west_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_middle",
+        "y": 270
+    },
+    "shape=multi_north_west_middle": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_middle",
+        "y": 270
+    },
+    "shape=multi_north_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_top"
+    },
+    "shape=multi_north_east_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_bottom"
+    },
+
+    "shape=multi_north_east_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_east_top"
+    },
+    "shape=multi_east_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_east_bottom"
+    },
+
+    "shape=multi_east_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_east_top"
+    },
+    "shape=multi_south_east_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_east_bottom"
+    },
+
+    "shape=multi_south_east_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_east_top"
+    },
+    "shape=multi_south_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_bottom"
+    },
+
+    "shape=multi_south_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_top"
+    },
+    "shape=multi_south_west_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_west_bottom"
+    },
+    "shape=multi_south_west_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_south_west_top"
+    },
+    "shape=multi_west_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_west_bottom"
+    },
+    "shape=multi_west_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_west_top"
+    },
+    "shape=multi_north_west_bottom": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_west_bottom"
+    },
+    "shape=multi_north_west_top": {
+      "model": "createelemancy:block/vortex_generator/vortex_gen_multi_north_west_top"
+    }
+  }
+}

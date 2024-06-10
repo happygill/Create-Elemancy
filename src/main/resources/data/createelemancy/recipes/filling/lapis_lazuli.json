@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "fluid": "createelemancy:reactivity",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    }
+  ]
+}

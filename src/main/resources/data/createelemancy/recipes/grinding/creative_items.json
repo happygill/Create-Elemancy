@@ -1,0 +1,14 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "tag": "createelemancy:creative_items"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:creative_spice",
+      "count": 1
+    }
+  ]
+}

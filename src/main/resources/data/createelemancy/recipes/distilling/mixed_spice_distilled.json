@@ -1,0 +1,10 @@
+{
+  "type": "createelemancy:distilling",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "createelemancy:mixed_spice"
+    }
+  ],
+  "results": []
+}

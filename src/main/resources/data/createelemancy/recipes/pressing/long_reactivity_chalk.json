@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "createelemancy:reactivity_spice"
+    },
+    {
+      "item": "createelemancy:reactivity_spice"
+    },
+    {
+      "item": "createelemancy:reactivity_spice"
+    },
+    {
+      "item": "createelemancy:reactivity_spice"
+    },
+    {
+      "item": "createelemancy:reactivity_spice"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:long_reactivity_chalk"
+    }
+  ]
+}

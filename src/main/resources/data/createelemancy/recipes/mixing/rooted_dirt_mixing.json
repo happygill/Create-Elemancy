@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "amount": 50,
+      "fluid": "createelemancy:stability",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:rooted_dirt"
+    }
+  ]
+}

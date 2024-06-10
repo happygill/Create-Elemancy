@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "tag": "createelemancy:any_item"
+    },
+    {
+      "fluid": "createelemancy:diluted_garbled_spice",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:diluted_garbled_spice"
+    }
+  ]
+}

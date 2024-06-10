@@ -1,0 +1,18 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "createelemancy:gravitational_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:density_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:featherweight_spice",
+      "count": 10
+    }
+  ]
+}

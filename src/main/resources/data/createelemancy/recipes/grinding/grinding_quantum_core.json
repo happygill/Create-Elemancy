@@ -1,0 +1,18 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "createelemancy:quantum_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:reactivity_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:stability_spice",
+      "count": 10
+    }
+  ]
+}

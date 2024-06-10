@@ -1,0 +1,26 @@
+{
+  "pattern": [
+    "CB1",
+    "SM1",
+    "SX1",
+    "SN1",
+    "SY1",
+    "SS1",
+    "ST1",
+    "SR1",
+    "DI1",
+    "DJ1",
+    "DG1",
+    "DF1"
+  ],
+  "name": "Imbued Flame",
+  "description": "Temporarily enchants all weapons with Flame/Fire Aspect",
+  "result": [
+    {
+      "type": "temp enchant",
+      "seconds": 60,
+      "level": 1,
+      "enchants": ["fire_aspect","flame"]
+    }
+  ]
+}

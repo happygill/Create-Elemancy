@@ -1,0 +1,18 @@
+{
+  "type": "createelemancy:grinding",
+  "ingredients": [
+    {
+      "item": "createelemancy:frostburn_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:heat_spice",
+      "count": 10
+    },
+    {
+      "item": "createelemancy:frigid_spice",
+      "count": 10
+    }
+  ]
+}

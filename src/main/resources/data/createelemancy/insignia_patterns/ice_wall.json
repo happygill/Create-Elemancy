@@ -1,0 +1,21 @@
+{
+  "pattern": [
+    "CB2",
+    "SX2",
+    "SN2",
+    "SO2",
+    "SQ2",
+    "SR2",
+    "ST2",
+    "SU2",
+    "SW2"
+  ],
+  "name": "Ice Wall",
+  "description": "Create Ice Wall for 15 seconds",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "ice_wall"
+    }
+  ]
+}

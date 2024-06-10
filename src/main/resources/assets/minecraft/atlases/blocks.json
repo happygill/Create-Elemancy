@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/heat_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/heat_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/frigid_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/frigid_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/reactivity_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/reactivity_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/stability_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/stability_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/density_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/density_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/featherweight_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/featherweight_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/power_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/power_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/null_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/null_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/garbled_spice_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/garbled_spice_still"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/diluted_garbled_spice_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createelemancy:fluid/diluted_garbled_spice_still"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "createelemancy:milk_nullify",
+  "ingredients": [
+    {
+      "item": "createelemancy:mixed_spice"
+    },
+    {
+      "fluidTag": "forge:milk",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:stability_spice"
+    }
+  ]
+}

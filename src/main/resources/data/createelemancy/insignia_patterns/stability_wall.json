@@ -1,0 +1,21 @@
+{
+  "pattern": [
+    "CB6",
+    "SX6",
+    "SN6",
+    "SO6",
+    "SQ6",
+    "SR6",
+    "ST6",
+    "SU6",
+    "SW6"
+  ],
+  "name": "Stability Wall",
+  "description": "Create Projectile Proof Wall for 15 seconds",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "stability_wall"
+    }
+  ]
+}

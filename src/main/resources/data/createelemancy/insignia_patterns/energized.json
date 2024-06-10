@@ -1,0 +1,11 @@
+{
+  "pattern": ["CC5","CA7","SI5","SC5","DC5","DI7","DA5","SJ5","SD5","SZ7"],
+  "name": "Energized",
+  "description": "Provides Energized effect for 5 minutes",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "energized"
+    }
+  ]
+}

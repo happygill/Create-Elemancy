@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "forge:netherrack"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:featherweight",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:end_stone"
+    }
+  ]
+}

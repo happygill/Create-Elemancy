@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate"
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:density",
+      "nbt": {}
+    },
+    {
+      "amount": 100,
+      "fluid": "createelemancy:reactivity",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:tuff"
+    }
+  ]
+}

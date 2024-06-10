@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "fluid": "createelemancy:heat",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item":  "minecraft:netherrack"
+    }
+  ]
+}

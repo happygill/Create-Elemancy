@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "axis=x,top=false": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_bottom"
+    },
+    "axis=x,top=true": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_top"
+    },
+    "axis=y,top=false": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_bottom",
+      "y": 90
+    },
+    "axis=y,top=true": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_top",
+      "y": 90
+    },
+    "axis=z,top=false": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_bottom",
+      "y": 90
+    },
+    "axis=z,top=true": {
+      "model": "createelemancy:block/vortex_control_point/vcp_large_top",
+      "y": 90
+    }
+  }
+}

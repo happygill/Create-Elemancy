@@ -1,0 +1,26 @@
+{
+  "pattern": [
+    "CC7",
+    "CA5",
+    "DJ5",
+    "SY5",
+    "QK7",
+    "QP7",
+    "QA7",
+    "QF7",
+    "DB7",
+    "DD7",
+    "SE7",
+    "SC7",
+    "SG7",
+    "SA7"
+  ],
+  "name": "Vast Relocation",
+  "description": "Swaps entity positions between the two Insignia circles",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "vast_relocation"
+    }
+  ]
+}

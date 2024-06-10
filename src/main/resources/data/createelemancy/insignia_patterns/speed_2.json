@@ -1,0 +1,13 @@
+{
+  "pattern": ["CB5","DH5","DG5","DE5","DF5"],
+  "name": "Heightened Acrobatics",
+  "description": "Provides Speed II for 2 minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "speed",
+      "seconds": 120,
+      "amp": 1
+    }
+  ]
+}

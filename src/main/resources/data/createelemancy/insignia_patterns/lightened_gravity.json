@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "CB4",
+    "DH4",
+    "DJ4",
+    "DF4",
+    "SY4",
+    "SZ4",
+    "SS4",
+    "SP4"
+  ],
+  "name": "Graceful Descent",
+  "description": "Provides Slow Falling for 5 minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "slow_falling",
+      "seconds": 300,
+      "amp": 0
+    }
+  ]
+}

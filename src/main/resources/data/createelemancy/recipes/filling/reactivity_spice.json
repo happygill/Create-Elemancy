@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "fluid": "createelemancy:reactivity",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:reactivity_spice"
+    }
+  ]
+}

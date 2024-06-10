@@ -1,0 +1,21 @@
+{
+  "pattern": [
+    "CB5",
+    "SX5",
+    "SN5",
+    "SO5",
+    "SQ5",
+    "SR5",
+    "ST5",
+    "SU5",
+    "SW5"
+  ],
+  "name": "Call of Lighting",
+  "description": "Next 5 arrows fired will strike lighting",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "call_of_lighting"
+    }
+  ]
+}

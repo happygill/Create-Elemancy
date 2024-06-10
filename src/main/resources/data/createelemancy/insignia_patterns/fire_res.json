@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "CA2",
+    "SY2"
+  ],
+  "name": "Flamed Resistance",
+  "description": "Provides Fire Res for 1 and a half minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "fire_resistance",
+      "seconds": 90,
+      "amp": 0
+    }
+  ]
+}

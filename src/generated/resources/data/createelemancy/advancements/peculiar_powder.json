@@ -1,0 +1,39 @@
+{
+  "parent": "createelemancy:grinding_wheel",
+  "criteria": {
+    "0": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "createelemancy:mixed_spice"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createelemancy.peculiar_powder.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "createelemancy:mixed_spice"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.createelemancy.peculiar_powder"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

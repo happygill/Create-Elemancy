@@ -1,0 +1,17 @@
+{
+  "pattern": [
+    "CA3",
+    "DI3",
+    "DJ3"
+  ],
+  "name": "0xygenic Density +",
+  "description": "Provides water breathing for 1 and a half minutes",
+  "result": [
+    {
+      "type": "potion effect",
+      "name": "water_breathing",
+      "seconds": 90,
+      "amp": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:moss_carpet"
+    },
+    {
+      "amount": 50,
+      "fluid": "createelemancy:frigid",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:lily_pad"
+    }
+  ]
+}

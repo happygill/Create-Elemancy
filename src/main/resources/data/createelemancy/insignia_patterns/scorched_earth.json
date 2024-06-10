@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "CB1",
+    "DH1",
+    "DJ1",
+    "DF1"
+  ],
+  "name": "Scorched Earth",
+  "description": "Caster gains ability to generate scorched earth effect by sneaking.  This effect deals damage to all enemies in the area of effect.",
+  "result": [
+    {
+      "type": "builtin",
+      "key": "scorched_earth"
+    }
+  ]
+}

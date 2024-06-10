@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createelemancy:item/short_heat_chalk"
+  }
+}

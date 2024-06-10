@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"2": "create:block/fluid_tank_connected",
+		"6": "create:block/fluid_tank_inner_connected",
+		"7": "create:block/fluid_tank_top_connected",
+		"8": "createelemancy:block/window_connected",
+		"particle": "createelemancy:block/brass_tank"
+
+	},
+	"elements": [
+		{
+			"name": "Window",
+			"from": [15.05, 4, 0],
+			"to": [15.05, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [27.525, 6, 8]},
+			"faces": {
+				"east": {"uv": [8, 8, 12, 11], "texture": "#8", "cullface": "west"},
+				"west": {"uv": [8, 8, 12, 11], "texture": "#8", "cullface": "west"}
+			}
+		},
+		{
+			"name": "Bottom",
+			"from": [0, 0, 0],
+			"to": [16, 4, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [27.525, 6, 8]},
+			"faces": {
+				"north": {"uv": [4, 15, 8, 16], "texture": "#2", "cullface": "north"},
+				"east": {"uv": [8, 15, 12, 16], "texture": "#2", "cullface": "north"},
+				"south": {"uv": [12, 15, 16, 16], "texture": "#2", "cullface": "north"},
+				"west": {"uv": [8, 15, 12, 16], "texture": "#2", "cullface": "north"},
+				"up": {"uv": [12, 4, 16, 8], "texture": "#6"},
+				"down": {"uv": [12, 4, 16, 8], "texture": "#7", "cullface": "down"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "tank 3x3",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "b",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"children": [
+						{
+							"name": "tank",
+							"origin": [8, 8, -23],
+							"color": 0,
+							"children": [0, 1]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "[${forge_version},)"
+license = "MIT"
+issueTrackerURL = "https://github.com/Garoot1111/Create-Elemancy/issues"
+
+[[mods]]
+modId = "createelemancy"
+version = "${version}"
+displayName = "Create: Elemancy"
+# JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+displayURL = "https://github.com/Garoot1111/Create-Elemancy"
+logoFile = "logo.png"
+
+displayTest = "MATCH_VERSION"
+
+description = '''
+A Create addon that mixes the arcane arts with technology through the interesting process known as elemancy!
+
+Team:
+Edomite227, Kyoko, Happysg, Akkini, The_seVen_, Garoot, Rdh, Kelad8_Mark_VIII
+Potato345, Cake, QuesoTurkey, Milky, Genericbadname
+'''
+
+[[dependencies.createelemancy]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createelemancy]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createelemancy]]
+modId = "create"
+mandatory = true
+versionRange = "[0.5.1.f,)"
+ordering = "NONE"
+side = "BOTH"
+
