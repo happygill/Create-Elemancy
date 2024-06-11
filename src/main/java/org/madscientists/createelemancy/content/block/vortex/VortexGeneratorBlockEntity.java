@@ -234,7 +234,7 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 		initTanks();
 		inputs.getFirst().setCapacity(size * 1000);
 		inputs.getSecond().setCapacity(size * 1000);
-		output.setCapacity(size * 1000);
+		output.setCapacity(size * 2000);
 		fluidCapability.invalidate();
 		fluidCapability = LazyOptional.of(() ->
 				new CombinedTankWrapper(inputs.getFirst(), inputs.getSecond(), output).enforceVariety());

@@ -25,6 +25,75 @@ public class InsigniaUtils {
         drawInit();
         renderInit();
         InsigniaEffect.init();
+        rotationMappingInit();
+    }
+
+    private static void rotationMappingInit() {
+        ROTATION_MAPPING.put("SY", "SZ");
+        ROTATION_MAPPING.put("SZ", "SY");
+        ROTATION_MAPPING.put("DI", "DJ");
+        ROTATION_MAPPING.put("DJ", "DI");
+
+        ROTATION_MAPPING.put("SM", "SP");
+        ROTATION_MAPPING.put("SP", "SS");
+        ROTATION_MAPPING.put("SS", "SV");
+        ROTATION_MAPPING.put("SV", "SM");
+
+        ROTATION_MAPPING.put("SN", "SQ");
+        ROTATION_MAPPING.put("SQ", "ST");
+        ROTATION_MAPPING.put("ST", "SW");
+        ROTATION_MAPPING.put("SW", "SN");
+
+        ROTATION_MAPPING.put("SX", "SO");
+        ROTATION_MAPPING.put("SO", "SR");
+        ROTATION_MAPPING.put("SR", "SU");
+        ROTATION_MAPPING.put("SU", "SX");
+
+        ROTATION_MAPPING.put("DE", "DF");
+        ROTATION_MAPPING.put("DF", "DG");
+        ROTATION_MAPPING.put("DG", "DH");
+        ROTATION_MAPPING.put("DH", "DE");
+
+        ROTATION_MAPPING.put("SA", "SD");
+        ROTATION_MAPPING.put("SD", "SG");
+        ROTATION_MAPPING.put("SG", "SJ");
+        ROTATION_MAPPING.put("SJ", "SA");
+
+        ROTATION_MAPPING.put("QP", "QD");
+        ROTATION_MAPPING.put("QD", "QH");
+        ROTATION_MAPPING.put("QH", "QL");
+        ROTATION_MAPPING.put("QL", "QP");
+
+        ROTATION_MAPPING.put("QA", "QE");
+        ROTATION_MAPPING.put("QE", "QI");
+        ROTATION_MAPPING.put("QI", "QM");
+        ROTATION_MAPPING.put("QM", "QA");
+
+        ROTATION_MAPPING.put("SB", "SE");
+        ROTATION_MAPPING.put("SE", "SH");
+        ROTATION_MAPPING.put("SH", "SK");
+        ROTATION_MAPPING.put("SK", "SB");
+
+        ROTATION_MAPPING.put("SC", "SF");
+        ROTATION_MAPPING.put("SF", "SI");
+        ROTATION_MAPPING.put("SI", "SL");
+        ROTATION_MAPPING.put("SL", "SC");
+
+        ROTATION_MAPPING.put("QB", "QF");
+        ROTATION_MAPPING.put("QF", "QJ");
+        ROTATION_MAPPING.put("QJ", "QN");
+        ROTATION_MAPPING.put("QN", "QB");
+
+        ROTATION_MAPPING.put("QC", "QG");
+        ROTATION_MAPPING.put("QG", "QK");
+        ROTATION_MAPPING.put("QK", "QO");
+        ROTATION_MAPPING.put("QO", "QC");
+
+        ROTATION_MAPPING.put("DA", "DB");
+        ROTATION_MAPPING.put("DB", "DC");
+        ROTATION_MAPPING.put("DC", "DD");
+        ROTATION_MAPPING.put("DD", "DA");
+
     }
 
 
@@ -52,6 +121,12 @@ public class InsigniaUtils {
     static final String INSIGNIA_KEY = "insignia_line_";
 
     static final double TOLERANCE = .15;
+
+    public static String getRotation(String line) {
+        String prefix = line.substring(0, 2);
+        String suffix = line.substring(2);
+        return ROTATION_MAPPING.getOrDefault(prefix, prefix) + suffix;
+    }
 
 
     private record DrawingPoint(String point, double x, double z) {
@@ -496,6 +571,8 @@ public class InsigniaUtils {
     public static final List<String> textureList5x5= Arrays.asList("c3","l7","l8","l9","l10","l11","l12","l13","l14");
 
     public static final HashMap<String,String> lineMappings = new HashMap<>();
+    public static final HashMap<String, String> ROTATION_MAPPING = new HashMap<>();
+
     private static final HashMap<String,PartialModel> insigniaModels = new HashMap<>();
 
     private static void renderInit(){

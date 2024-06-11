@@ -23,6 +23,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 
 public class InsigniaPattern {
@@ -48,9 +49,25 @@ public class InsigniaPattern {
 
     public boolean matches(List<String> drawnLines) {
         if (codes.size() > 1 && drawnLines.size() > 1) {
-            return codes.stream().sorted().toList().equals(drawnLines.stream().sorted().toList());
+            List<String> sortedCodes = codes.stream().sorted().collect(Collectors.toList());
+            List<String> sortedDrawnLines = drawnLines.stream().sorted().toList();
+
+            if (sortedCodes.equals(sortedDrawnLines))
+                return true;
+
+            for (int i = 0; i < 3; i++) {
+                sortedCodes = rotate(sortedCodes).stream().sorted().collect(Collectors.toList());
+                if (sortedCodes.equals(sortedDrawnLines))
+                    return true;
+            }
         }
-      return false;
+        return false;
+    }
+
+    public static List<String> rotate(List<String> lines) {
+        return lines.stream()
+                .map(InsigniaUtils::getRotation)
+                .collect(Collectors.toList());
     }
 
     public InsigniaPattern(String name, String description, List<String> pattern, Function<InsigniaContext,InsigniaContext.Result> effect){
