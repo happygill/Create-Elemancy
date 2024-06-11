@@ -1,10 +1,8 @@
 package org.madscientists.createelemancy.foundation.compat.jei;
 
 import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllFluids;
 import com.simibubi.create.compat.jei.*;
 import com.simibubi.create.compat.jei.category.CreateRecipeCategory;
-import com.simibubi.create.content.fluids.potion.PotionFluid;
 import com.simibubi.create.content.logistics.filter.AbstractFilterScreen;
 import com.simibubi.create.content.processing.basin.BasinRecipe;
 import com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen;
@@ -17,9 +15,7 @@ import com.simibubi.create.infrastructure.config.CRecipes;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.RecipeTypes;
-import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.gui.drawable.IDrawable;
-import mezz.jei.api.helpers.IPlatformFluidHelper;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.registration.*;
 import mezz.jei.api.runtime.IIngredientManager;
@@ -29,12 +25,12 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.ItemLike;
 import org.madscientists.createelemancy.Elemancy;
-import org.madscientists.createelemancy.foundation.compat.jei.category.DistillingCategory;
-import org.madscientists.createelemancy.foundation.compat.jei.category.GrindingCategory;
 import org.madscientists.createelemancy.content.recipe.GrindingRecipe;
 import org.madscientists.createelemancy.content.registry.ElemancyBlocks;
 import org.madscientists.createelemancy.content.registry.ElemancyItems;
 import org.madscientists.createelemancy.content.registry.ElemancyRecipes;
+import org.madscientists.createelemancy.foundation.compat.jei.category.DistillingCategory;
+import org.madscientists.createelemancy.foundation.compat.jei.category.GrindingCategory;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -105,14 +101,6 @@ public class ElemancyJEI implements IModPlugin {
 	@Override
 	public void registerRecipeTransferHandlers(IRecipeTransferRegistration registration) {
 		registration.addRecipeTransferHandler(new BlueprintTransferHandler(), RecipeTypes.CRAFTING);
-	}
-
-	@Override
-	public <T> void registerFluidSubtypes(ISubtypeRegistration registration, IPlatformFluidHelper<T> platformFluidHelper) {
-		PotionFluidSubtypeInterpreter interpreter = new PotionFluidSubtypeInterpreter();
-		PotionFluid potionFluid = AllFluids.POTION.get();
-		registration.registerSubtypeInterpreter(ForgeTypes.FLUID_STACK, potionFluid.getSource(), interpreter);
-		registration.registerSubtypeInterpreter(ForgeTypes.FLUID_STACK, potionFluid.getFlowing(), interpreter);
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })

@@ -617,6 +617,20 @@ public class InsigniaUtils {
         return false;
     }
 
+    public static InsigniaPattern getPattern(ItemStack insigniaItem) {
+        CompoundTag insigniaGuideTag = insigniaItem.getOrCreateTag();
+        if (insigniaGuideTag.contains(INSIGNIA_NBT_KEY)) {
+            for (int i = 0; i < InsigniaUtils.INSIGNIA_PATTERNS.size(); i++) {
+                if (insigniaGuideTag.contains(INSIGNIA_NBT_KEY) &&
+                        InsigniaUtils.INSIGNIA_PATTERNS.get(i).getName().equals(insigniaGuideTag.getCompound(INSIGNIA_NBT_KEY).getString(INSIGNIA_NAME_KEY))) {
+                    return InsigniaUtils.INSIGNIA_PATTERNS.get(i);
+                }
+            }
+        }
+        return null;
+    }
+
+
     //SuperByte Transformations
     public static SuperByteBuffer getSuperByte(String code, BlockState blockState) {
         return transformByte(code, CachedBufferer.partial(getModel(code), blockState));

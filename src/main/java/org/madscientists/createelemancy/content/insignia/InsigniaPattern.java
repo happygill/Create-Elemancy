@@ -72,6 +72,7 @@ public class InsigniaPattern {
 
 
     protected InsigniaPattern(){}
+
     public static InsigniaPattern fromJson(JsonObject object) {
         InsigniaPattern pattern = new InsigniaPattern();
         try {

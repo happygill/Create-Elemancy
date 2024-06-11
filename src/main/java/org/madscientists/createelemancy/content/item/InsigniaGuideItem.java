@@ -1,7 +1,9 @@
 package org.madscientists.createelemancy.content.item;
 
+import com.simibubi.create.foundation.gui.ScreenOpener;
 import com.simibubi.create.foundation.item.render.SimpleCustomRenderer;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -17,14 +19,15 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+import net.minecraftforge.fml.DistExecutor;
 import org.jetbrains.annotations.Nullable;
 import org.madscientists.createelemancy.content.insignia.InsigniaBlockEntity;
 import org.madscientists.createelemancy.content.insignia.InsigniaPattern;
 import org.madscientists.createelemancy.content.insignia.InsigniaUtils;
 import org.madscientists.createelemancy.content.registry.ElemancyBlocks;
+import org.madscientists.createelemancy.content.screen.InsigniaScreen;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -60,6 +63,23 @@ public class InsigniaGuideItem extends Item implements IAdditionalCreativeItems 
     }
 
     @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+        ItemStack stack = player.getItemInHand(usedHand);
+        if (usedHand == InteractionHand.MAIN_HAND)
+            DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> displayScreen(stack, player));
+
+        return super.use(level, player, usedHand);
+    }
+
+    @OnlyIn(value = Dist.CLIENT)
+    protected void displayScreen(ItemStack stack, Player player) {
+        InsigniaPattern pattern = InsigniaUtils.getPattern(stack);
+        if (player instanceof LocalPlayer && pattern != null)
+            ScreenOpener
+                    .open(new InsigniaScreen(pattern));
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         CompoundTag tag = pStack.getOrCreateTag();
         if (tag.contains(INSIGNIA_NBT_KEY)) {
@@ -77,8 +97,7 @@ public class InsigniaGuideItem extends Item implements IAdditionalCreativeItems 
         consumer.accept(SimpleCustomRenderer.create(this, new RunicItemRenderer()));
     }
 
-    @Override
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+    public InteractionResultHolder<ItemStack> usex(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if (pPlayer != null && !pLevel.isClientSide()) {
             ItemStack guide = pPlayer.getItemInHand(pUsedHand);
             CompoundTag tag = guide.getOrCreateTag();
