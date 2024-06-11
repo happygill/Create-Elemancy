@@ -6,15 +6,18 @@ import org.madscientists.createelemancy.content.block.distiller.DistillerInstanc
 import org.madscientists.createelemancy.content.block.distiller.DistillerRenderer;
 import org.madscientists.createelemancy.content.block.elemental.ElementalBlockEntity;
 import org.madscientists.createelemancy.content.block.elemental.ElementalWallRenderer;
+import org.madscientists.createelemancy.content.block.grinder.GrindingWheelBlockEntity;
 import org.madscientists.createelemancy.content.block.grinder.GrindingWheelControllerBlockEntity;
 import org.madscientists.createelemancy.content.block.grinder.GrindingWheelInstance;
 import org.madscientists.createelemancy.content.block.grinder.GrindingWheelRenderer;
-import org.madscientists.createelemancy.content.block.grinder.GrindingWheelBlockEntity;
-import org.madscientists.createelemancy.content.nullspace.NullSpaceBlockEntity;
-import org.madscientists.createelemancy.content.nullspace.NullSpaceRenderer;
-import org.madscientists.createelemancy.content.block.vortex.*;
+import org.madscientists.createelemancy.content.block.vortex.VCPBlockEntity;
+import org.madscientists.createelemancy.content.block.vortex.VCPRenderer;
+import org.madscientists.createelemancy.content.block.vortex.VGRenderer;
+import org.madscientists.createelemancy.content.block.vortex.VortexGeneratorBlockEntity;
 import org.madscientists.createelemancy.content.insignia.InsigniaBlockEntity;
 import org.madscientists.createelemancy.content.insignia.InsigniaRenderer;
+import org.madscientists.createelemancy.content.nullspace.NullSpaceBlockEntity;
+import org.madscientists.createelemancy.content.nullspace.NullSpaceRenderer;
 
 import static org.madscientists.createelemancy.Elemancy.LOGGER;
 import static org.madscientists.createelemancy.Elemancy.registrate;
@@ -23,6 +26,7 @@ import static org.madscientists.createelemancy.Elemancy.registrate;
 public class ElemancyBlockEntities {
     public static final BlockEntityEntry<VortexGeneratorBlockEntity> VORTEX_GENERATOR = registrate()
             .blockEntity("vortex_generator", VortexGeneratorBlockEntity::new)
+            .renderer(() -> VGRenderer::new)
             .validBlocks(ElemancyBlocks.VORTEX_GENERATOR)
             .register();
 

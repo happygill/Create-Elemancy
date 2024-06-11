@@ -1,11 +1,8 @@
 package org.madscientists.createelemancy;
 
 
-import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-
 import net.minecraft.resources.ResourceLocation;
-
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,20 +12,19 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
 import org.apache.commons.lang3.StringUtils;
-import org.madscientists.createelemancy.foundation.advancement.ElemancyTriggers;
-import org.madscientists.createelemancy.foundation.advancement.ElemancyAdvancements;
+import org.madscientists.createelemancy.content.fluid.ElemancyOpenPipeBehavior;
 import org.madscientists.createelemancy.content.insignia.InsigniaUtils;
+import org.madscientists.createelemancy.content.item.GarbledSpiceItem;
 import org.madscientists.createelemancy.content.projectile.ElemancyPotatoProjectileTypes;
 import org.madscientists.createelemancy.content.projectile.PotatoGunHelper;
-import org.madscientists.createelemancy.content.item.GarbledSpiceItem;
 import org.madscientists.createelemancy.content.registry.*;
+import org.madscientists.createelemancy.foundation.advancement.ElemancyAdvancements;
+import org.madscientists.createelemancy.foundation.advancement.ElemancyTriggers;
 import org.madscientists.createelemancy.foundation.config.ElemancyConfig;
 import org.madscientists.createelemancy.foundation.data.ElemancyDatagen;
 import org.madscientists.createelemancy.foundation.events.CommonEvents;
 import org.madscientists.createelemancy.foundation.network.ElemancyMessages;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -79,6 +75,7 @@ public class Elemancy {
 		ElemancyBlocks.init();
 		ElemancyConfig.register(context);
 		ElemancyFluids.init();
+		ElemancyOpenPipeBehavior.register();
 		ElemancyItems.init();
 		ElemancyBlockEntities.init();
 		ElemancyPartials.init();

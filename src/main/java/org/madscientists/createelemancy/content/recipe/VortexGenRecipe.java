@@ -49,18 +49,18 @@ public class VortexGenRecipe extends ProcessingRecipe<RecipeWrapper> {
     }
 
 
-    public boolean fuelMatches(Couple<ElemancyFluidTank> inputs) {
+    public boolean fuelMatches(Couple<ElemancyFluidTank> inputs, int sizeMultiplier) {
         FluidIngredient firstIngredient = getFluidIngredients().get(0);
         FluidIngredient secondIngredient = getFluidIngredients().get(1);
         FluidStack firstFluid = inputs.getFirst().getFluid();
         FluidStack secondFluid = inputs.getSecond().getFluid();
 
-        return (validFluid(firstIngredient, firstFluid) && validFluid(secondIngredient, secondFluid)) ||
-                (validFluid(firstIngredient, secondFluid) && validFluid(secondIngredient, firstFluid));
+        return (validFluid(firstIngredient, firstFluid, sizeMultiplier) && validFluid(secondIngredient, secondFluid, sizeMultiplier)) ||
+                (validFluid(firstIngredient, secondFluid, sizeMultiplier) && validFluid(secondIngredient, firstFluid, sizeMultiplier));
     }
 
-    private boolean validFluid(FluidIngredient ingredient, FluidStack stack) {
-        return ingredient.test(stack) && stack.getAmount() >= ingredient.getRequiredAmount();
+    private boolean validFluid(FluidIngredient ingredient, FluidStack stack, int sizeMultiplier) {
+        return ingredient.test(stack) && stack.getAmount() >= ingredient.getRequiredAmount() * sizeMultiplier;
     }
 
     @Override

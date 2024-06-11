@@ -2,19 +2,19 @@
   "type": "createelemancy:vortex_gen",
   "ingredients": [
     {
-      "amount": 150,
+      "amount": 75,
       "fluid": "createelemancy:stability",
       "nbt": {}
     },
     {
-      "amount": 150,
+      "amount": 75,
       "fluid": "createelemancy:reactivity",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "amount": 300,
+      "amount": 75,
       "fluid": "createelemancy:garbled_spice",
       "nbt": {}
     }

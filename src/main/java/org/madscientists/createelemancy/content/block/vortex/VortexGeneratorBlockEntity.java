@@ -16,6 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
@@ -53,10 +54,19 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 
 	}
 
+	public int getSizeMultiplier() {
+		return (int) Math.max(1, size * .7);
+	}
+
+	@Override
+	public AABB getRenderBoundingBox() {
+		return super.getRenderBoundingBox().inflate(0, height, 0);
+	}
+
 	private void initTanks() {
 		if (inputs == null || output == null) {
 			inputs = Couple.create(new ElemancyFluidTank(1000 * size).forbidExtraction(), new ElemancyFluidTank(1000 * size).forbidExtraction());
-			output = new ElemancyFluidTank(1000 * size).forbidInsertion();
+			output = new ElemancyFluidTank(2000 * size).forbidInsertion();
 			fluidCapability = LazyOptional.of(() -> new CombinedTankWrapper(inputs.getFirst(), inputs.getSecond(), output).enforceVariety());
 		}
 	}
@@ -97,7 +107,7 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 	public Optional<VortexGenRecipe> getMatchingRecipe() {
 		List<Recipe<?>> list = RecipeFinder.get(getRecipeCacheKey(), level, recipe -> recipe.getType() == ElemancyRecipes.VORTEX_GEN.getType());
 		return list.stream()
-				.filter(recipe -> ((VortexGenRecipe) recipe).fuelMatches(inputs))
+				.filter(recipe -> ((VortexGenRecipe) recipe).fuelMatches(inputs, getSizeMultiplier()))
 				.findFirst()
 				.map(recipe -> (VortexGenRecipe) recipe);
 	}
@@ -116,12 +126,12 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 
 	public int getSUOutput() {
 		if(recipe==null) return 0;
-		return recipe.suOutput/getVCPCount();
+		return (recipe.suOutput * getSizeMultiplier() / getVCPCount());
 	}
 
 	public int getRPM() {
 		if(recipe==null) return 0;
-		return recipe.rpm;
+		return recipe.rpm * getSizeMultiplier();
 	}
 
 
@@ -141,10 +151,10 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 		}
 		burnTicks = recipe.burnTicks;
 		inputs.forEach(ElemancyFluidTank::allowExtraction);
-		inputs.forEach(tank -> tank.drain(recipe.getFluidIngredients().get(0).getRequiredAmount(), IFluidHandler.FluidAction.EXECUTE));
+		inputs.forEach(tank -> tank.drain(recipe.getFluidIngredients().get(0).getRequiredAmount() * getSizeMultiplier(), IFluidHandler.FluidAction.EXECUTE));
 		inputs.forEach(ElemancyFluidTank::forbidExtraction);
 		output.allowInsertion();
-		output.fill(new FluidStack(recipe.getFluidResults().get(0), recipe.getFluidResults().get(0).getAmount()), IFluidHandler.FluidAction.EXECUTE);
+		output.fill(new FluidStack(recipe.getFluidResults().get(0), recipe.getFluidResults().get(0).getAmount() * getSizeMultiplier()), IFluidHandler.FluidAction.EXECUTE);
 		output.forbidInsertion();
 		notifyUpdate();
 	}
@@ -155,7 +165,7 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 	}
 
 	public boolean hasOutputSpace() {
-		return output.getFluidAmount()<size*1000;
+		return output.getFluidAmount() < size * 2000;
 	}
 
 	public boolean isPrimary() {

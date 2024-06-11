@@ -2,7 +2,6 @@ package org.madscientists.createelemancy.content.block.vortex;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Axis;
 import com.simibubi.create.AllPartialModels;
 import com.simibubi.create.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
 import com.simibubi.create.foundation.render.CachedBufferer;
@@ -40,6 +39,7 @@ public class VCPRenderer  extends SmartBlockEntityRenderer<VCPBlockEntity> {
         boolean top = blockState.getValue(VCPBlock.TOP);
         if(vcpCount==0)
             return;
+        ms.pushPose();
         for (int i = 0; i < blockEntity.height/vcpCount; i++) {
             SuperByteBuffer turbine = CachedBufferer.partial(ElemancyPartials.TURBINE, blockState);
             turbine.translate(0, (1f+i*.5f)*(top?-1:1), 0);
@@ -48,8 +48,12 @@ public class VCPRenderer  extends SmartBlockEntityRenderer<VCPBlockEntity> {
             turbine.rotateCentered(Direction.get(Direction.AxisDirection.POSITIVE, Direction.Axis.Y), getAngleForTe(blockEntity,blockEntity.getBlockPos(), Direction.Axis.Y));
             turbine.light(light).renderInto(ms, vb);
         }
+        ms.popPose();
+
+
 
     }
+
 
     private static SuperByteBuffer getKineticModel(BlockState state) {
         boolean top = state.getValue(VCPBlock.TOP);

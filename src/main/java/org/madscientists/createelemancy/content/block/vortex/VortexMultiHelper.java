@@ -222,19 +222,20 @@ public class VortexMultiHelper {
         return level.getBlockEntity(pos) instanceof FluidTankBlockEntity||level.getBlockEntity(pos) instanceof VortexGeneratorBlockEntity;
     }
 
-    private static boolean isSingleTower(int height, int size){
+    static boolean isSingleTower(int height, int size) {
         return height==size&&height>1;
     }
-    private static boolean isSingleBlock(int height, int size){
+
+    static boolean isSingleBlock(int height, int size) {
         return height==1&&size==1;
     }
 
-    private static boolean isSingleMultiblock(int height, int size){
+    static boolean isSingleMultiblock(int height, int size) {
         return size>1&&height==1;
     }
 
-    private static boolean isMultiBlockTower(int height, int size){
-        return size>1&&height>1;
+    static boolean isMultiBlockTower(int height, int size) {
+        return size > 1 && height > 1 && size != height;
     }
 
 
