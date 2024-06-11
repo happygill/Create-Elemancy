@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-17T15:03:48.8707651	Registrate Provider for createelemancy [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.20.1	2024-06-10T18:05:17.1797721	Registrate Provider for createelemancy [Recipes, Advancements, Loot Tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 c460454cd706fcc44b70135ae299f85ebf06f6d0 assets/createelemancy/blockstates/density.json
 11b493c44e109ab69c033753bb4ee66e31f3d8f9 assets/createelemancy/blockstates/distiller.json
 04691e24d29365e5798bc876e04c0914c1e4a2d4 assets/createelemancy/blockstates/featherweight.json
@@ -17,8 +17,8 @@ beeffdca02c65c1f53733481bba6bfe32641c9d4 assets/createelemancy/blockstates/stabi
 945de0929832df0ef3b947f9e37922101996e6ad assets/createelemancy/blockstates/vortex_control_point.json
 89090f291d5dd69810418d47b7d60cf419771374 assets/createelemancy/blockstates/vortex_control_point_large_cog.json
 aed135dfa07286474a1b42eb4c33698abbb98290 assets/createelemancy/blockstates/vortex_control_point_small_cog.json
-0b9fab41dd384a16af8140dedda1773350020ad1 assets/createelemancy/lang/en_ud.json
-6930ae3a250693830e13ee791a0d78f4ba334abb assets/createelemancy/lang/en_us.json
+a27ef875e79709b02be9113b82142e44005f9210 assets/createelemancy/lang/en_ud.json
+d9fb4cabb5f13e6d9ae684dadf376381e4aebfa2 assets/createelemancy/lang/en_us.json
 3d9494249120aa303642a6e351207ecd8264774e assets/createelemancy/models/block/density.json
 633dbf58cd9135119503164e46f46bbe851c42c0 assets/createelemancy/models/block/featherweight.json
 364df169ca971113429ae97df453fd4c20f0df2d assets/createelemancy/models/block/frigid.json
@@ -47,6 +47,8 @@ af9d9be4ba56fa28395b3d9ef297173150edab6c assets/createelemancy/models/item/gravi
 c66f9593b2b8556076f3e1bfbf3880076af90044 assets/createelemancy/models/item/heat_bucket.json
 f650df43d55297394e29342df1f10250b998d96b assets/createelemancy/models/item/heat_spice.json
 026ce4d15d20c842db9121581254c7ee9061f4f1 assets/createelemancy/models/item/ice_wall.json
+896fa066d50868f0af01fefdfe7a5fd9720e090d assets/createelemancy/models/item/incomplete_insignia_guide.json
+c7ebbba4de35ca3f64ba699980abd6ca5ac557ac assets/createelemancy/models/item/incomplete_runic_slate.json
 ca334663357c00e2c01a22f5db5c4a8bc1e1d605 assets/createelemancy/models/item/incomplete_short_density_chalk.json
 049f7c6f149aa72539d100ac7f0ebb31d3a060e3 assets/createelemancy/models/item/incomplete_short_featherweight_chalk.json
 292dfd767ddae00c8c2a07c1574b6ac85f106b71 assets/createelemancy/models/item/incomplete_short_frigid_chalk.json

@@ -1,0 +1,16 @@
+{
+  "type": "createelemancy:printing_deploy",
+  "ingredients": [
+    {
+      "item": "createelemancy:runic_slate"
+    },
+    {
+      "item": "createelemancy:insignia_guide"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:incomplete_runic_slate"
+    }
+  ]
+}

@@ -37,6 +37,9 @@ public class ElemancyItems {
             .register();
 
 
+	public static final ItemEntry<IncompletePrintingItem>
+			INCOMPLETE_INSIGNIA_GUIDE = register("incomplete_insignia_guide", IncompletePrintingItem::new),
+			INCOMPLETE_RUNIC_SLATE = register("incomplete_runic_slate", IncompletePrintingItem::new);
 
 
 	public static final ItemEntry<KineticSpiceItem>
@@ -49,6 +52,7 @@ public class ElemancyItems {
 
 	public static final ItemEntry<InsigniaGuideItem>
 			INSIGNIA_GUIDE = register("insignia_guide", InsigniaGuideItem::new);
+
 
 	public static final ItemEntry<AbilityTotemItem>
 			ABILITY_TOTEM = register("ability_totem", AbilityTotemItem::new);

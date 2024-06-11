@@ -21,10 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import org.madscientists.createelemancy.Elemancy;
-import org.madscientists.createelemancy.content.recipe.DistillerRecipe;
-import org.madscientists.createelemancy.content.recipe.GrindingRecipe;
-import org.madscientists.createelemancy.content.recipe.MilkNullifyingRecipe;
-import org.madscientists.createelemancy.content.recipe.VortexGenRecipe;
+import org.madscientists.createelemancy.content.recipe.*;
 
 import java.util.Optional;
 import java.util.Set;
@@ -34,7 +31,9 @@ public enum ElemancyRecipes implements IRecipeTypeInfo {
 	GRINDING(GrindingRecipe::new),
 	DISTILLING(DistillerRecipe::new),
 	VORTEX_GEN(VortexGenRecipe::new),
-
+	PRINTING_DEPLOY(PrintingDeployRecipe::new),
+	PRINTING_PRESS(PrintingPressRecipe::new),
+	PRINTING_FILL(PrintingFillRecipe::new),
 	MILK_NULLIFY(MilkNullifyingRecipe::new);
 
 

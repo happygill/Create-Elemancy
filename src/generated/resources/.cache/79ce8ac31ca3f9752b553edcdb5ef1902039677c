@@ -1,2 +1,4 @@
-// 1.20.1	2024-04-09T15:18:09.6878456	Create Elemancy's Generated Registry Entries
+// 1.20.1	2024-06-10T18:05:17.1817659	Create Elemancy's Generated Registry Entries
 ca2af77b997b3cdeb1f535397ffc147acd9d6072 data/createelemancy/damage_type/grind.json
+7ae243d69793571e297a4fd414928ade267d848b data/createelemancy/damage_type/nullified.json
+87859b1ab48dcececf6006e98fdd1184679cdb55 data/createelemancy/damage_type/unknown_forces.json

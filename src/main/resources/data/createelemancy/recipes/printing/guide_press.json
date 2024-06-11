@@ -1,0 +1,13 @@
+{
+  "type": "createelemancy:printing_press",
+  "ingredients": [
+    {
+      "item": "createelemancy:incomplete_insignia_guide"
+    }
+  ],
+  "results": [
+    {
+      "item": "createelemancy:insignia_guide"
+    }
+  ]
+}
