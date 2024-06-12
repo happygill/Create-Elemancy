@@ -73,8 +73,7 @@ public class InsigniaScreen extends AbstractSimiScreen {
         PoseStack poseStack = graphics.pose();
         poseStack.pushPose();
         poseStack.scale(30, 30, 30);
-        poseStack.translate(6.5, 5.7, 0);
-
+        poseStack.translate((double) Minecraft.getInstance().getWindow().getGuiScaledWidth() / 58 - 1, (double) Minecraft.getInstance().getWindow().getGuiScaledHeight() / 59 + 1, 0);
         poseStack.mulPose(Axis.XP.rotationDegrees(90));
         for (String code : pattern.getCodes()) {
             poseStack.pushPose();

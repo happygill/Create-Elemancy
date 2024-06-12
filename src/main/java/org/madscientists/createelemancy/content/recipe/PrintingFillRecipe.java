@@ -2,6 +2,7 @@ package org.madscientists.createelemancy.content.recipe;
 
 import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create.foundation.fluid.FluidIngredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.items.wrapper.RecipeWrapper;
@@ -18,7 +19,9 @@ public class PrintingFillRecipe extends FillingRecipe {
         if (!super.matches(inv, level)) return false;
         ItemStack stack = inv.getItem(0).copy();
         enforceNextResult(() -> IncompletePrintingItem.applyFill(stack));
-
+        FluidIngredient fluidIngredient = IncompletePrintingItem.setFluid(stack);
+        if (fluidIngredient == null) return false;
+        fluidIngredients.set(0, fluidIngredient);
         return true;
     }
 

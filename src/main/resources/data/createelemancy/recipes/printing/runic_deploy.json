@@ -8,6 +8,7 @@
       "item": "createelemancy:insignia_guide"
     }
   ],
+  "keepHeldItem": true,
   "results": [
     {
       "item": "createelemancy:incomplete_runic_slate"

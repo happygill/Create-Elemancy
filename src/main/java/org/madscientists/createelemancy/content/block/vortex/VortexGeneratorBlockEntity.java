@@ -131,7 +131,7 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 
 	public int getRPM() {
 		if(recipe==null) return 0;
-		return recipe.rpm * getSizeMultiplier();
+		return recipe.rpm;
 	}
 
 
@@ -235,6 +235,7 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 		inputs.getFirst().setCapacity(size * 1000);
 		inputs.getSecond().setCapacity(size * 1000);
 		output.setCapacity(size * 2000);
+		invalidateCaps();
 		fluidCapability.invalidate();
 		fluidCapability = LazyOptional.of(() ->
 				new CombinedTankWrapper(inputs.getFirst(), inputs.getSecond(), output).enforceVariety());
@@ -306,7 +307,12 @@ public class VortexGeneratorBlockEntity extends SmartBlockEntity implements Mult
 							.style(ChatFormatting.DARK_GRAY))
 					.forGoggles(tooltip, 1);
 
-			return containedFluidTooltip(tooltip, isPlayerSneaking, getPrimaryVortexGenerator().fluidCapability.cast());
+			containedFluidTooltip(tooltip, isPlayerSneaking, getPrimaryVortexGenerator().fluidCapability.cast());
+			if (recipe != null) {
+				tooltip.add(Component.literal("Input Consumed: " + recipe.getFluidIngredients().get(0).getRequiredAmount() * getSizeMultiplier() + "mb/s"));
+				tooltip.add(Component.literal("Output Produced: " + recipe.getFluidResults().get(0).getAmount() * getSizeMultiplier() + "mb/s"));
+			}
+			return true;
 		}
 		if (getPrimaryVortexGenerator()!=null)
 			return getPrimaryVortexGenerator().addToGoggleTooltip(tooltip, isPlayerSneaking);

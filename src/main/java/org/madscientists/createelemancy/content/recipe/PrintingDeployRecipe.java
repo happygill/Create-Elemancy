@@ -20,9 +20,9 @@ public class PrintingDeployRecipe extends DeployerApplicationRecipe {
         if (!super.matches(inv, level)) return false;
         ItemStack stack = inv.getItem(0).copy();
         ItemStack guide = inv.getItem(1).copy();
-        if (isComplexInsignia(stack))
+        if (isComplexInsignia(guide))
             return false;
-        enforceNextResult(() -> IncompletePrintingItem.applyDeployer(stack, guide));
+        enforceNextResult(() -> IncompletePrintingItem.applyDeployer(guide, stack));
 
         return true;
     }

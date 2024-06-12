@@ -28,12 +28,12 @@ public class VortexMultiHelper {
         }
         else {
             if(vcp.getLevel().getBlockEntity(vcp.getBlockPos().relative(facing)) instanceof VortexGeneratorBlockEntity vg&&vg.getPrimaryVortexGenerator()!=null){
-                if (vg.getPrimaryVortexGenerator().getBlockPos().getX() != vcp.getBlockPos().getX() && vg.getPrimaryVortexGenerator().getBlockPos().getZ() != vcp.getBlockPos().getZ())
+                if (vg.getPrimaryVortexGenerator().getBlockPos().getX() != vcp.getBlockPos().getX() || vg.getPrimaryVortexGenerator().getBlockPos().getZ() != vcp.getBlockPos().getZ())
                     return;
-                vcp.setPrimaryPos(vg.getPrimaryPos());
                 vg.getPrimaryVortexGenerator().setVCP(vcp.getBlockPos(), vcp.getBlockState().getValue(VCPBlock.TOP));
                 vcp.size = vg.getPrimaryVortexGenerator().size;
                 vcp.height = vg.getPrimaryVortexGenerator().height;
+                vcp.setPrimaryPos(vg.getPrimaryPos());
             }
             else
                 tryFormMultiBlock(vcp, facing);

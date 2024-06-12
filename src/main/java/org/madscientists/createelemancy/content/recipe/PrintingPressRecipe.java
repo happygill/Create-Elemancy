@@ -17,8 +17,9 @@ public class PrintingPressRecipe extends PressingRecipe {
     public boolean matches(RecipeWrapper inv, Level level) {
         if (!super.matches(inv, level)) return false;
         ItemStack stack = inv.getItem(0).copy();
+        if (!stack.getOrCreateTag().contains("filled"))
+            return false;
         enforceNextResult(() -> IncompletePrintingItem.applyPress(stack));
-
         return true;
     }
 
